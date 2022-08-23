@@ -7,9 +7,9 @@ object evenSum extends App{
 
     def evenSum(num:Int):Int = num match {
         case x if x<=0 => 0
-        case x if isEven(x) => x + evenSum(x-1)
+        case x if isEven(x) => x + evenSum(x-2)
         case _ => evenSum(num-1)
     }
 
-    print(evenSum(5))
+    print(evenSum(2))
 }
